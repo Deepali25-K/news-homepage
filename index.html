@@ -5,75 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet"> 
   <link href="output.css" rel="stylesheet">
-  
+  <link href="styles.css" rel="stylesheet">
   
   <title>Frontend Mentor | News homepage</title>
 
 </head>
-<body class="p-4">
-  <main>
-    <section class="bg-cyan-950 text-red-400">
-      <img src="/assets/images/image-web-3-mobile.jpg" alt="" class="pb-4">
-      <div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-          But is it really fulfilling its promise?</p>
+<body class="bg-[#fffdfa] font-custom p-4 sm:p-6 md:p-8 min-[1200px]:px-[5%] min-[1440px]:px-[12%]">
+
+  <!-- HEADER -->
+
+  <header class="flex justify-between items-center my-4 mb-8 md:mx-6 min-[1200px]:mx-0 min-[1200px]:mb-7 min-[1200px]:mt-10">
+    <div class="logo">
+        <img src="/assets/images/logo.svg" alt="Logo" class="w-12 min-[1200px]:w-16">
+    </div>
+
+    <div class="group relative">
+        <button class="text-2xl">&#9776;</button>
+    </div>
+  </header>
+
+<!-- MAIN -->
+
+  <main class="lg:flex lg:gap-4 lg:mb-8 min-[1200px]:gap-7">
+		<section class="min-[1200px]:w-[68%]">
+			<!-- Mobile Image -->
+      <img src="/assets/images/image-web-3-mobile.jpg" alt="" class="pb-5 mx-auto block md:hidden">
+
+  <!-- Desktop Image -->
+      <img src="/assets/images/image-web-3-desktop.jpg" alt="" class="pb-5 hidden md:my-8 md:block min-[1200px]:pb-0">
+			<div class="min-[1200px]:flex min-[1200px]:gap-4">
+				<h1 class="font-extrabold text-[2.5rem] leading-1 pb-5 min-[1200px]:w-1/2 min-[1440px]:text-[3.6rem]">The Bright Future of Web 3.0?</h1>
+        <div class="min-[1200px]:w-1/2 min-[1200px]:pr-2">
+          <p class="text-[#5d5f79] text-[0.92rem] leading-7 pb-6 md:w-4/5 min-[1200px]:text-[0.95rem] min-[1200px]:w-full min-[1200px]:leading-normal">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+				  <button class="bg-[#f15e50] text-[#fffdfa] font-bold tracking-[0.4em] text-xs py-5 px-8 uppercase min-[1200px]:py-4">Read More</button>
+        </div>
+			</div>
+		</section>
+		<section class="h-[100%] bg-[#00001a] text-[#fffdfa] px-6 py-4 my-16 lg:my-0 lg:mt-8 min-[1200px]:w-[32%] min-[1200px]:py-6 min-[1200px]:px-7">
+			<h2 class="text-[1.8rem] font-bold text-[#e9ab53] mb-6 min-[1200px]:text-[2.4rem]">New</h2>
+			<div class="border-b border-[#5d5f79] mb-6">
+				<h3 class="text-[1.14rem] font-bold  mb-2 min-[1200px]:text-[1.2rem]">Hydrogen VS Electric Cars</h3>
+				<p class="text-[#c5c6ce] text-[0.92rem] leading-7 pb-6">Will hydrogen-fueled cars ever catch up to EVs?</p>
+			</div>
+			<div class="border-b border-[#5d5f79] mb-6">
+				<h3 class="text-[1.14rem] font-bold  mb-2 min-[1200px]:text-[1.2rem]">The Downsides of AI Artistry</h3>
+				<p class="text-[#c5c6ce] text-[0.92rem] leading-7 pb-6">What are the possible adverse effects of on-demand AI image generation?</p>
+			</div>
+			<div>
+				<h3 class="text-[1.14rem] font-bold  mb-2 min-[1200px]:text-[1.2rem]">Is VC Funding Drying Up?</h3>
+				<p class="text-[#c5c6ce] text-[0.92rem] leading-7 pb-6 min-[1200px]:pb-0">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+			</div>
+		</section>
+	</main>
+
+  <!-- SECTION -->
+
+	<section class="lg:flex lg:gap-4 min-[1200px]:ga[0.92rem]0">
+    <div class="flex gap-5 my-8 lg:w-1/3">
+      <div class="w-28 [1.14rem]0 flex-shrink-0 lg:w-24 lg:[1.8rem]6">
+        <img src="/assets/images/image-retro-pcs.jpg" class="w-full h-full object-cover lg:object-contain">
       </div>
-    </section>
-    <section class="bg-cyan-950">
-      <h2>New</h2>
       <div>
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <h4 class="text-[#c5c6ce] font-bold text-[2.5rem] lg:text-[1.8rem]">01</h4>
+        <p class="text-[#00001a] font-bold text-[1.14rem] lg:font-extrabold lg:my-1">Reviving Retro PCs</p>
+        <p class="text-[#5d5f79] text-[0.92rem] leading-7 sm:w-1/2 lg:w-full lg:leading-6">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="flex gap-5 my-8 lg:w-1/3">
+      <div class="w-28 [1.14rem]0 flex-shrink-0 lg:w-24 lg:[1.8rem]6">
+        <img src="/assets/images/image-top-laptops.jpg" class="w-full h-full object-cover lg:object-contain">
       </div>
       <div>
-        <h3>The Downsides of AI Artistry</h3>
-        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <h4 class="text-[#c5c6ce] font-bold text-[2.5rem] lg:text-[1.8rem]">02</h4>
+        <p class="text-[#00001a] font-bold text-[1.14rem] lg:font-extrabold lg:my-1">Top 10 Laptops of 2022</p>
+        <p class="text-[#5d5f79] text-[0.92rem] leading-7 sm:w-2/3 lg:w-full lg:leading-6 lg:pr-2">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="flex gap-5 my-8 lg:w-1/3">
+      <div class="w-28 [1.14rem]0 flex-shrink-0 lg:w-24 lg:[1.8rem]6">
+        <img src="/assets/images/image-gaming-growth.jpg" class="w-full h-full object-cover lg:object-contain">
       </div>
       <div>
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        <h4 class="text-[#c5c6ce] font-bold text-[2.5rem] lg:text-[1.8rem]">03</h4>
+        <p class="text-[#00001a] font-bold text-[1.14rem] lg:font-extrabold lg:my-1">The Growth of Gaming</p>
+        <p class="text-[#5d5f79] text-[0.92rem] leading-7 sm:w-2/3 lg:w-full lg:leading-6">How the pandemic has sparked fresh opportunities.</p>
       </div>
-    </section>
-  </main>
-  <section></section>
-<!--
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    </div>
+  </section>
 
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
--->  
 </body>
 </html>
